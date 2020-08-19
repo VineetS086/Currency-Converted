@@ -2,8 +2,7 @@ import json
 import time
 from web_scrape import Cur_convert
 
-#take currency as an input(c1)
-#opt - saves outdated data, returns eqlant amount of c1 in INR 
+#
 
 def cur_cache(cur):
     #Loading Data
@@ -17,6 +16,7 @@ def cur_cache(cur):
         for i in file['data']:
             file['data'][i] = str(float(Cur_convert(1000,i,'inr'))/1000)
         file['time'] = time.time()
+        file['noted_time'] = time.ctime()
     if cur not in file['data'].keys():
         print('Searching for new Currency')
         try:
