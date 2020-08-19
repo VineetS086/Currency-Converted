@@ -1,0 +1,8 @@
+1. open personal.py first an copy your User agent... Just Gooogle it... whats my user agent.
+
+2. open main.py
+
+3 open test.py
+
+this should work..
+
